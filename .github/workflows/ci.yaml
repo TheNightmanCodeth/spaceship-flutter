@@ -23,7 +23,10 @@ jobs:
           git clone https://github.com/flutter/flutter.git --depth 1 -b 3.3.3 "$HOME/flutter"
           echo "$HOME/flutter/bin" >> $GITHUB_PATH
           echo "$HOME/.pub-cache/bin" >> $GITHUB_PATH
-          flutter precache
+        shell: zsh
+
+      - run: flutter precache
+        shell: zsh
 
       - name: 🧪 Run Tests
         run: ./tests/spaceship-section.test.zsh
