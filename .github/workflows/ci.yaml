@@ -19,10 +19,9 @@ jobs:
         run: zsh --version
 
       - name: 🦋 Install Flutter
-        uses: subosito/flutter-action@v2
+        uses: britannio/action-install-flutter@v1
         with:
-          flutter-version: '3.3.3'
-          channel: 'stable'
+          version: '3.3.3'
 
       - name: 🧪 Run Tests
         run: ./tests/spaceship-section.test.zsh
