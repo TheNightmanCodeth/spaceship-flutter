@@ -4,34 +4,22 @@
 </h1>
 
 <h4 align="center">
-  A <a href="https://template.com" target="_blank">Foobar</a> section for Spaceship prompt
+  A <a href="https://template.com" target="_blank">Flutter</a> section for Spaceship prompt
 </h4>
 
 <p align="center">
-  <a href="https://github.com/spaceship-prompt/spaceship-section/releases">
-    <img src="https://img.shields.io/github/v/release/spaceship-prompt/spaceship-section.svg?style=flat-square"
+  <a href="https://github.com/TheNightmanCodeth/spaceship-flutter/releases">
+    <img src="https://img.shields.io/github/v/release/TheNightmanCodeth/spaceship-flutter.svg?style=flat-square"
       alt="GitHub Release" />
   </a>
 
-  <a href="https://github.com/spaceship-prompt/spaceship-section/actions">
-    <img src="https://img.shields.io/github/workflow/status/spaceship-prompt/spaceship-section/ci?style=flat-square"
+  <a href="https://github.com/TheNightmanCodeth/spaceship-flutter/actions">
+    <img src="https://img.shields.io/github/workflow/status/TheNightmanCodeth/spaceship-flutter/ci?style=flat-square"
       alt="GitHub Workflow Status" />
-  </a>
-
-  <a href="https://twitter.com/SpaceshipPrompt">
-    <img src="https://img.shields.io/badge/twitter-%40SpaceshipPrompt-00ACEE.svg?style=flat-square"
-      alt="Spaceship Twitter" />
-  </a>
-
-  <a href="https://discord.gg/NTQWz8Dyt9">
-    <img
-      src="https://img.shields.io/discord/859409950999707668?label=discord&logoColor=white&style=flat-square"
-      alt="Chat on Discord"
-    />
   </a>
 </p>
 
-Current Foobar version, through foobar (`😍`).
+Current Flutter version 🦋.
 
 ## Installing
 
@@ -42,70 +30,70 @@ You need to source this plugin somewhere in your dotfiles. Here's how to do it w
 Execute this command to clone this repo into Oh-My-Zsh plugin's folder:
 
 ```zsh
-git clone https://github.com/spaceship-prompt/spaceship-section.git $ZSH_CUSTOM/plugins/spaceship-section
+git clone https://github.com/TheNightmanCodeth/spaceship-flutter.git $ZSH_CUSTOM/plugins/spaceship-flutter
 ```
 
-Include `spaceship-section` in Oh-My-Zsh plugins list:
+Include `spaceship-flutter` in Oh-My-Zsh plugins list:
 
 ```zsh
-plugins=($plugins spaceship-section)
+plugins=($plugins spaceship-flutter)
 ```
 
 ### [zplug]
 
 ```zsh
-zplug "spaceship-prompt/spaceship-section"
+zplug "TheNightmanCodeth/spaceship-flutter"
 ```
 
 ### [antigen]
 
 ```zsh
-antigen bundle "spaceship-prompt/spaceship-section"
+antigen bundle "TheNightmanCodeth/spaceship-flutter"
 ```
 
 ### [antibody]
 
 ```zsh
-antibody bundle "spaceship-prompt/spaceship-section"
+antibody bundle "TheNightmanCodeth/spaceship-flutter"
 ```
 
 ### [zinit]
 
 ```zsh
-zinit light "spaceship-prompt/spaceship-section"
+zinit light "TheNightmanCodeth/spaceship-flutter"
 ```
 
 ### [zgen]
 
 ```zsh
-zgen load "spaceship-prompt/spaceship-section"
+zgen load "TheNightmanCodeth/spaceship-flutter"
 ```
 
 ### [sheldon]
 
 ```toml
-[plugins.spaceship-section]
-github = "spaceship-prompt/spaceship-section"
+[plugins.spaceship-flutter]
+github = "TheNightmanCodeth/spaceship-flutter"
 ```
 
 ### Manual
 
 If none of the above methods works for you, you can install Spaceship manually.
 
-1. Clone this repo somewhere, for example to `$HOME/.zsh/spaceship-section`.
+1. Clone this repo somewhere, for example to `$HOME/.zsh/spaceship-flutter`.
 2. Source this section in your `~/.zshrc`.
 
 ### Example
 
 ```zsh
 mkdir -p "$HOME/.zsh"
-git clone --depth=1 https://github.com/spaceship-prompt/spaceship-section.git "$HOME/.zsh/spaceship-section"
+git clone --depth=1 https://github.com/TheNightmanCodeth/spaceship-flutter.git "$HOME/.zsh/spaceship-flutter"
 ```
 
 For initializing prompt system add this to your `.zshrc`:
 
 ```zsh title=".zshrc"
-source "~/.zsh/spaceship-section/spaceship-section.plugin.zsh"
+source "~/.zsh/spaceship-flutter/spaceship-flutter.plugin.zsh"
 ```
 
 ## Usage
