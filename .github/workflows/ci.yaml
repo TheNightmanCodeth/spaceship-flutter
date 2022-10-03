@@ -25,9 +25,6 @@ jobs:
           echo "$HOME/.pub-cache/bin" >> $GITHUB_PATH
         shell: zsh {0}
 
-      - run: zsh -c flutter precache
-        shell: zsh {0}
-
       - name: 🧪 Run Tests
         run: ./tests/spaceship-section.test.zsh
 
