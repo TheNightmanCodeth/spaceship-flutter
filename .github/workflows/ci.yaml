@@ -19,9 +19,11 @@ jobs:
         run: zsh --version
 
       - name: 🦋 Install Flutter
-        uses: britannio/action-install-flutter@v1
-        with:
-          version: '3.3.3'
+        run: |
+          git clone https://github.com/flutter/flutter.git --depth 1 -b 3.3.3 "$HOME/flutter"
+          echo "$HOME/flutter/bin" >> $GITHUB_PATH
+          echo "$HOME/.pub-cache/bin" >> $GITHUB_PATH
+          flutter precache
 
       - name: 🧪 Run Tests
         run: ./tests/spaceship-section.test.zsh
