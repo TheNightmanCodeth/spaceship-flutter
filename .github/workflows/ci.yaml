@@ -18,12 +18,16 @@ jobs:
       - name: 🖨 Print Zsh Vesion
         run: zsh --version
 
-      - name: 🦋 Install Flutter
+      - name: 🦋 Install Flutter (Mock...)
         run: |
-          git clone https://github.com/flutter/flutter.git --depth 1 -b 3.3.3 "$HOME/flutter"
+          mkdir -p $HOME/flutter/bin
+          touch $HOME/flutter/bin/flutter
+          echo "echo \"Flutter 3.3.3 • channel stable • https://github.com/flutter/flutter.git\"" >> $HOME/flutter/bin/flutter
+          echo "echo \"Framework • revision 18a827f393 (4 days ago) • 2022-09-28 10:03:14 -0700\"" >> $HOME/flutter/bin/flutter
+          echo "echo \"Engine • revision 5c984c26eb\"" >> $HOME/flutter/bin/flutter
+          echo "echo \"Tools • Dart 2.18.2 • DevTools 2.15.0\"" >> $HOME/flutter/bin/flutter
+          chmod +x $HOME/flutter/bin/flutter
           echo "$HOME/flutter/bin" >> $GITHUB_PATH
-          echo "$HOME/.pub-cache/bin" >> $GITHUB_PATH
-        shell: zsh {0}
 
       - name: 🧪 Run Tests
         run: ./tests/spaceship-section.test.zsh
