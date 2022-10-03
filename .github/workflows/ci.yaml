@@ -13,10 +13,16 @@ jobs:
     container: ghcr.io/spaceship-prompt/spaceship-prompt:master
     steps:
       - name: ⬇️ Checkout Repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: 🖨 Print Zsh Vesion
         run: zsh --version
+
+      - name: 🦋 Install Flutter
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.3.3'
+          channel: 'stable'
 
       - name: 🧪 Run Tests
         run: ./tests/spaceship-section.test.zsh
